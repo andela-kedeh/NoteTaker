@@ -13,10 +13,10 @@ import com.example.andela.notetaker.activity.MainActivity;
 /**
  * Created by andela on 11/12/15.
  */
-public class DeleteAlart {
+public class DeleteAlert {
     private Activity activity;
 
-    public DeleteAlart(Activity activity) {
+    public DeleteAlert(Activity activity) {
         this.activity = activity;
     }
 

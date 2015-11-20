@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-import com.example.andela.notetaker.AppHelper.DeleteAlart;
+import com.example.andela.notetaker.AppHelper.DeleteAlert;
 import com.example.andela.notetaker.R;
 import com.example.andela.notetaker.AppHelper.RecordAlert;
 import com.example.andela.notetaker.AppHelper.SetSavingTime;
@@ -96,7 +96,7 @@ public class AddNote extends AppCompatActivity implements View.OnClickListener, 
             case R.id.share:
                 break;
             case R.id.delete:
-                new DeleteAlart(this).showDeleteWarning();
+                new DeleteAlert(this).showDeleteWarning();
                 break;
             case R.id.settings:
                 new SetSavingTime(this).show();
