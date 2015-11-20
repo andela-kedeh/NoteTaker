@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.andela.notetaker.AppHelper.HelpDialog;
-import com.example.andela.notetaker.NoteAdapter;
+import com.example.andela.notetaker.adapter.NoteAdapter;
 import com.example.andela.notetaker.R;
 
 import java.util.ArrayList;
