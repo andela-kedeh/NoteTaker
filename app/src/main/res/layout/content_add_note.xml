@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.andela.notetaker.AddNote"
+    tools:context="com.example.andela.notetaker.activity.AddNote"
     tools:showIn="@layout/activity_add_note">
 
 

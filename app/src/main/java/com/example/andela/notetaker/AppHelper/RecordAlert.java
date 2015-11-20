@@ -1,4 +1,4 @@
-package com.example.andela.notetaker;
+package com.example.andela.notetaker.AppHelper;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -7,27 +7,28 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import com.example.andela.notetaker.R;
+
 /**
  * Created by andela on 11/12/15.
  */
-public class DeleteAlart {
+public class RecordAlert {
     private Activity activity;
 
-    public DeleteAlart(Activity activity) {
+    public RecordAlert(Activity activity) {
         this.activity = activity;
     }
 
-    public void showDeleteWarning() {
+    public void show() {
         final LayoutInflater inflater = activity.getLayoutInflater();
-        View view = inflater.inflate(R.layout.delete_warning, null);
+        View view = inflater.inflate(R.layout.record, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity).setView(view);
-        builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(activity, MainActivity.class);
-                activity.startActivity(intent);
+
             }
         })
-        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();

@@ -1,10 +1,12 @@
-package com.example.andela.notetaker;
+package com.example.andela.notetaker.AppHelper;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
+
+import com.example.andela.notetaker.R;
 
 /**
  * Created by andela on 11/12/15.

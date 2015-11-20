@@ -1,4 +1,4 @@
-package com.example.andela.notetaker;
+package com.example.andela.notetaker.activity;
 
 import android.content.Intent;
 import android.location.LocationManager;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+
+import com.example.andela.notetaker.R;
 
 public class SplashScreen extends AppCompatActivity{
     private String TAG = "SplashScreen";
