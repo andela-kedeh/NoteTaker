@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import com.example.andela.notetaker.R;
 
 public class SplashScreen extends AppCompatActivity{
-    private String TAG = "SplashScreen";
     private LocationManager locationManager;
 
     @Override

@@ -23,12 +23,12 @@ public class RecordAlert {
         final LayoutInflater inflater = activity.getLayoutInflater();
         View view = inflater.inflate(R.layout.record, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity).setView(view);
-        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.save, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 
             }
         })
-        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();

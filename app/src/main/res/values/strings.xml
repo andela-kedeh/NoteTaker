@@ -9,4 +9,16 @@
     <string name="how_it_works3">3. To enter text, touch Note.</string>
     <string name="how_it_works4">4. To save your note, touch the back arrow in the top-left.</string>
     <string name="title_activity_add_note">Add Note</string>
+    <string name="title">title</string>
+    <string name="title1">title</string>
+    <string name="time">time</string>
+    <string name="popup">mPopup</string>
+    <string name="setForceShowIcon">setForceShowIcon</string>
+    <string name="yes">yes</string>
+    <string name="no">No</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="save2">Save</string>
+    <string name="cancel1">Cancel</string>
 </resources>

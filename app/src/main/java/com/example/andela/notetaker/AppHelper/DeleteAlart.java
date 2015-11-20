@@ -24,13 +24,13 @@ public class DeleteAlart {
         final LayoutInflater inflater = activity.getLayoutInflater();
         View view = inflater.inflate(R.layout.delete_warning, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity).setView(view);
-        builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(activity, MainActivity.class);
                 activity.startActivity(intent);
             }
         })
-        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+        .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();

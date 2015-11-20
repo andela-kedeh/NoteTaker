@@ -23,7 +23,7 @@ public class HelpDialog {
         final LayoutInflater inflater = activity.getLayoutInflater();
         View view = inflater.inflate(R.layout.how_to_use, null);
         final AlertDialog.Builder builder = new AlertDialog.Builder(activity).setView(view);
-        builder.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();

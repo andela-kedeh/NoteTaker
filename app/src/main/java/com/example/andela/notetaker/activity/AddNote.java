@@ -40,14 +40,14 @@ public class AddNote extends AppCompatActivity implements View.OnClickListener, 
         playRecord = (TextView) findViewById(R.id.play_record);
         title = (TextView) findViewById(R.id.title);
         time = (TextView) findViewById(R.id.time);
-        if(!getIntent().getExtras().getString("title").isEmpty()){
+        if(!getIntent().getExtras().getString(getString(R.string.title)).isEmpty()){
             recordedMic.setVisibility(View.VISIBLE);
             playRecord.setVisibility(View.VISIBLE);
             time.setVisibility(View.VISIBLE);
             timeIcon.setVisibility(View.VISIBLE);
         }
-        title.setText(getIntent().getExtras().getString("title"));
-        time.setText(getIntent().getExtras().getString("time"));
+        title.setText(getIntent().getExtras().getString(getString(R.string.title1)));
+        time.setText(getIntent().getExtras().getString(getString(R.string.time)));
     }
 
     @Override
@@ -74,11 +74,11 @@ public class AddNote extends AppCompatActivity implements View.OnClickListener, 
         Object menuHelper;
         Class[] argTypes;
         try {
-            Field fMenuHelper = PopupMenu.class.getDeclaredField("mPopup");
+            Field fMenuHelper = PopupMenu.class.getDeclaredField(getString(R.string.popup));
             fMenuHelper.setAccessible(true);
             menuHelper = fMenuHelper.get(popup);
             argTypes = new Class[] { boolean.class };
-            menuHelper.getClass().getDeclaredMethod("setForceShowIcon", argTypes).invoke(menuHelper, true);
+            menuHelper.getClass().getDeclaredMethod(getString(R.string.setForceShowIcon), argTypes).invoke(menuHelper, true);
         } catch (Exception e) {
             popup.show();
             return;
